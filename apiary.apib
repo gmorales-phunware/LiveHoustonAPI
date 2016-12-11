@@ -1,0 +1,42 @@
+FORMAT: 1A
+HOST: https://livehoustonapi.livehouston.com/
+
+# LiveHouston API
+
+The LiveHouston API drives the LiveHouston Mobile Apps (iOS and Android)
+
+## Events [/events]
+
+### List all Events [GET]
+
++ Request
+
+  + Headers
+
+            Authorization: Bearer: SDFSDFSDFSDFSDFSDFIIIII
+
++ Response 200 (application/json)
+
+        [
+            {
+                "level" : "Events",
+                "events" : [
+                    {
+                      "eventTitle" : "Boss Walker",
+                      "date" : "Jan 11",
+                      "eventDescription" : "Walk an average of 1,000 steps per day after your surgery.",
+                      "event_image_url" : "https://placeholdit.imgix.net/~text?txtsize=18&txt=86%C3%97114&w=86&h=114",
+                      "tag" : "Weekend",
+                      "type" : "Featured"
+                    },
+                    {
+                      "eventTitle" : "Boss Walker",
+                      "date" : "Jan 11",
+                      "eventDescription" : "Walk an average of 1,000 steps per day after your surgery.",
+                      "event_image_url" : "https://placeholdit.imgix.net/~text?txtsize=18&txt=86%C3%97114&w=86&h=114",
+                      "tag" : "Weekend",
+                      "type" : "None"
+                    }
+                  ]
+            }
+        ]
