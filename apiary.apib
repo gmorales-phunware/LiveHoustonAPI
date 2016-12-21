@@ -14,7 +14,7 @@ The LiveHouston API drives the LiveHouston Mobile Apps (iOS and Android)
   <!--+ Headers-->
 
   <!--          Authorization: Bearer: SDFSDFSDFSDFSDFSDFIIIII-->
-  
+
   ### Updated Response to match website
 
   + Response 200 (application/json)
@@ -89,13 +89,13 @@ The LiveHouston API drives the LiveHouston Mobile Apps (iOS and Android)
                 }
                   ]
         }
-          
+
 ## Categories [/categories]
 
 ### List all Categories [GET]
 
   + Response 200 (application/json)
-  
+
         {
             "thingsCategories": [
                 "Live Music",
@@ -128,5 +128,55 @@ The LiveHouston API drives the LiveHouston Mobile Apps (iOS and Android)
                 "Outdoor",
                 "Museum Exhibitions",
                 "Theater & Performing Arts"
+            ]
+        }
+
+## Things TO DO [/thingstodo]
+
+### List all Things To DO [GET]
+
+  + Response 200 (application/json)
+
+        {
+          "attractions" : [
+              {
+                "name" : "14 Pews",
+                "phone" : "(281) 888-9677",
+                "address" : "800 Aurora Street | Houston, TX 77009",
+                "areaOfTown" : "Houston Heights",
+                "detailImageURL" : "https://res-2.cloudinary.com/simpleview/image/fetch/c_limit,f_auto,h_640,q_60,w_800/http://Houston.simpleviewcrm.com/images/listings/original_14-Pews.jpg",
+                "website" : "http://14pews.com/pages/home.asp",
+                "description" : "Taking over the space that once housed the Aurora Picture Show, the new 14 Pews microcinema is the brainchild of proprietor Cressandra Thibodeaux who recently returned to Houston from Los Angeles. The small cinema space reopened in August 2010 in the old white wooden church at 800 Aurora and is already garnering praise for its innovative and sometimes provocative programming.\n\nFilms including Crawford: A Documentary, Outrage and For the Bible Tells Me So are showing here and plans are underway to bring more independent films and documentaries to the fledgling organization, as well as community events and small film festivals.\n\n14 Pews aims to pick up the space’s legacy of bringing a convergence of artistic opportunity to the Heights.",
+                "ammenities" : [],
+                "meeting_facilities" : [{}]
+              },
+              {
+                "name" : "8th Wonder Brewery",
+                "phone" : "(713) 229-0868",
+                "address" : "2202 Dallas Street | Houston, TX 77003",
+                "areaOfTown" : "EaDo/East End",
+                "detailImageURL" : "https://res-2.cloudinary.com/simpleview/image/fetch/c_limit,f_auto,h_640,q_60,w_800/http://Houston.simpleviewcrm.com/images/listings/original_8th-wonder-5.jpg",
+                "website" : "http://8thwonderbrew.com",
+                "description" : "The brains behind Houston’s Eatsie Boys food truck and Eatsie Boys Cafe have branched out with another concept, 8th Wonder Brewery.\n\nLocated in EaDo and named after the city’s iconic Astrodome, this brewery produces seasonal selections and limited-edition offerings. The brewery began offering tours in May 2013.\n\nPracticing their craft in a dome-like warehouse on the edge of Downtown and in the shadow of the major sports stadiums, these brewers say they are making Houston's 'craft beer for the home team.' The brews themselves are unique, ranging from the Rocket Fuel (Vietnamese coffee infused Porter) to the MCA Rauch, a classic Bamburg Rauch beer.",
+                "ammenities" : [
+                  "Outdoor Area",
+                  "Self Parking",
+                  "Free Wireless",
+                  "Live Music",
+                  "Pet Friendly",
+                  "Accessible via Light Rail",
+                  "Wireless",
+                  "ADA Accessible"
+                ],
+                "meeting_facilities": [
+                        {
+                        "number_of_rooms": 4,
+                        "total_squared_feet": 5000,
+                        "Audio/Visual": true,
+                        "On-Site Catering": true,
+                        "Private Room": true
+                        }
+                    ]
+                }
             ]
         }
