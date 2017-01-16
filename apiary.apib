@@ -9,14 +9,6 @@ The LiveHouston API drives the LiveHouston Mobile Apps (iOS and Android)
 
 ### List all Events [GET]
 
-<!--+ Request-->
-
-  <!--+ Headers-->
-
-  <!--          Authorization: Bearer: SDFSDFSDFSDFSDFSDFIIIII-->
-
-  ### Updated Response to match website
-
   + Response 200 (application/json)
 
         {
@@ -90,46 +82,84 @@ The LiveHouston API drives the LiveHouston Mobile Apps (iOS and Android)
                   ]
         }
 
-## Categories [/categories]
+## Categories [/filter_categories]
 
-### List all Categories [GET]
+### List all Filter Categories [GET]
 
   + Response 200 (application/json)
 
-        {
-            "thingsCategories": [
-                "Live Music",
-                "Dating",
-                "Free Things",
-                "CityPASS",
-                "Houston & Beyond",
-                "Kids",
-                "Museums",
-                "Shopping",
-                "Performing Arts",
-                "Sports",
-                "Tours",
-                "Parks & Outdoors",
-                "Golf Courses",
-                "Spas & Fitness",
-                "Historic Sites",
-                "Creative Classes",
-                "Other"
-            ],
-            "eventCategories": [
-                "Holiday Lights",
-                "Annual Events",
-                "Kid-Friendly",
-                "Concerts & Live Music",
-                "Free",
-                "Festivals",
-                "Sports",
-                "Food & Drink",
-                "Outdoor",
-                "Museum Exhibitions",
-                "Theater & Performing Arts"
-            ]
-        }
+        [
+            {
+                "created_at": "2017-01-16T02:26:31.328Z",
+                "id": 1, 
+                "title": "Attractions", 
+                "updated_at": "2017-01-16T02:26:31.328Z",
+                "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/1.json"
+            },
+            {
+                "created_at": "2017-01-16T02:26:41.856Z",
+                "id": 2,
+                "title": "Event Centers",
+                "updated_at":"2017-01-16T02:26:41.856Z",
+                "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/2.json"
+            },
+            {
+                "created_at":"2017-01-16T02:26:53.505Z",
+                "id":3,
+                "title":"Golf Courses",
+                "updated_at":"2017-01-16T02:26:53.505Z",
+                "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/3.json"
+            },
+            {
+                "created_at":"2017-01-16T02:27:03.021Z",
+                "id":4,
+                "title":"Health \u0026 Fitness",
+                "updated_at":"2017-01-16T02:27:03.021Z",
+                "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/4.json"
+            },
+            {
+                "created_at":"2017-01-16T02:27:11.703Z",
+            "id":5,
+            "title":"Historic Sites",
+            "updated_at":"2017-01-16T02:27:11.703Z",
+            "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/5.json"
+            },
+            {
+            "created_at":"2017-01-16T02:27:21.978Z",
+            "id":6,
+            "title":"Museums",
+            "updated_at":"2017-01-16T02:27:21.978Z",
+            "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/6.json"
+            },
+            {
+            "created_at":"2017-01-16T02:27:32.007Z",
+            "id":7,
+            "title":"Parks \u0026 Outdoors",
+            "updated_at":"2017-01-16T02:27:32.007Z",
+            "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/7.json"
+            },
+            {
+            "created_at":"2017-01-16T02:27:41.078Z",
+            "id":8,
+            "title":"Restaurants",
+            "updated_at":"2017-01-16T02:27:41.078Z",
+            "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/8.json"
+            },
+            {
+            "created_at":"2017-01-16T02:27:47.824Z",
+            "id":9,
+            "title":"Shopping",
+            "updated_at":"2017-01-16T02:27:47.824Z",
+            "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/9.json"
+            },
+            {
+            "created_at":"2017-01-16T02:27:56.581Z",
+            "id":10,
+            "title":"Theatre",
+            "updated_at":"2017-01-16T02:27:56.581Z",
+            "url":"https://hidden-wildwood-14228.herokuapp.com/filter_categories/10.json"
+            }
+        ]
 
 ## Things TO DO [/thingstodo]
 
@@ -210,29 +240,76 @@ The LiveHouston API drives the LiveHouston Mobile Apps (iOS and Android)
             ]
         }
         
-## Featured Events [/featured]
+## Featured Events [/featured] 
 
 ### List all Featured Events [GET]
 
-  + Response 200 (application/json)
-  
++ Response 200 (application/json)
+
         {
-          "featured_events": [
-            {
-                "attractionID": 1,
-                "created_at": null,
-                "event_address": "800 Aurora Street | Houston, TX 77009",
-                "event_category": "ARTS \u0026 CULTURE",
-                "event_description": "",
-                "event_image_url": "https://res-2.cloudinary.com/simpleview/image/fetch/c_limit,f_auto,h_640,q_60,w_800/http://Houston.simpleviewcrm.com/images/listings/original_14-Pews.jpg",
-                "event_phone": "(281) 888-9677",
-                "event_website": "http://14pews.com/pages/home.asp",
-                "has_reservation": false, 
+            "featured_events": [
+                {
+                "event_address": "1300 HOLMAN STREET | HOUSTON, TX 77004",
+                "event_date" : "January 14, 2017",
+                "event_category": "FEATURED",
+                "event_description": "The MLK Youth Parade Will Kick-off The 2017 MLK Holiday Wekend. The Parade Will be Held On january 14, 2017 In Houston's Midtown Originating On San Jacinto Street \u0026 Elgin Street Beginning @ 12 Noon (CST).",
+                "event_image_url": "https://res-3.cloudinary.com/simpleview/image/fetch/c_fill,f_auto,g_center,h_400,q_60,w_600/http://Houston.simpleviewcrm.com/images/calendar/ff2c53be-e9ae-4c7f-b66d-3a0875e400a7.jpg",
+                "event_phone": "713-953-1633",
+                "event_website": "http://www.mlkgrandeparade.org",
+                "tickets_available": false, 
                 "id": 1,
-                "reservation_url": " ",
-                "title": "14 Pews"
-            }
-          ]
-            
-            
+                "buy_tickets_url": null,
+                "title": "11TH ANNUAL MLK YOUTH PARADE"
+                },
+                {
+                "event_address": "1515 HERMANN DRIVE | HOUSTON, TX 77004",
+                "event_date" : "January 14, 2017 - April 23, 2017",
+                "event_category": "FEATURED",
+                "event_description": "Body Worlds RX at The Health Museum is a prescription for healthy living. Take one large dose of enlightenment during the Houston debut of Body Worlds RX. Real human bodies show you details of today's common diseases and the inner workings of your anatomy. Be inspired and empowered to take steps toward a healthier life.\\n\\nFrom organs to muscles to the nervous system and to skeletal structures, Body Worlds RX gives an unprecedented look inside the most sophisticated mechanism in the world, the human body.",
+                "event_image_url": "https://res-1.cloudinary.com/simpleview/image/fetch/c_fill,f_auto,g_center,h_400,q_60,w_600/https://Houston.simpleviewcrm.com/images/calendar/5e11133d-698d-4ac9-b34c-b032ce7e9349.jpg",
+                "event_phone": null,
+                "event_website": "http://www.mhms.org/ManageDetail/Detail_Default.aspx?contentid=1949\u0026categoryid=420",
+                "tickets_available": false, 
+                "id": 2,
+                "buy_tickets_url": " ",
+                "title": "BODY WORLDS RX"
+                },
+                {
+                "event_address": "1001 AVENIDA DE LAS AMERICAS | HOUSTON, TX 77010",
+                "event_date" : "January 15, 2017",
+                "event_category": "FEATURED",
+                "event_description": "This annual 26.2, 13.1 and 3.1 mile run, which begins and ends at downtown's George R. Brown Convention Center, has steadily grown to attract more than 20,000 entrants from around the world and 200,000 spectators.",
+                "event_image_url": "https://res-5.cloudinary.com/simpleview/image/fetch/c_fill,f_auto,g_center,h_400,q_60,w_600/https://Houston.simpleviewcrm.com/images/calendar/6f3a39e5-9732-cb42-dc13ebfdefcfa11a.jpg",
+                "event_phone": "713-957-3453",
+                "event_website": "http://www.chevronhoustonmarathon.com/",
+                "tickets_available": true, 
+                "id": 3,
+                "buy_tickets_url": "https://www.visithoustontexas.com/listings/george-r-brown-convention-center/22562/",
+                "title": "The 1940 Air Terminal Museum"
+                },
+                {
+                "event_address": "12303 SONNIER STREET | HOUSTON, TX 77044",
+                "event_category": "FEATURED",
+                "event_description": "Alexander Deussen (1882-1959), a petroleum geologist, donated a 309-acre site on Lake Houston to Harris County in 1956. The site was converted into a public park and named the Alexander Deussen Park.\n\nThe highlight of the park is a herd of buffalo, giving visitors the opportunity to view these large and beautiful creatures in a natural setting. There is no charge to use the boat ramps at Alexander Deussen Park, and fishing is permitted from piers.\n\nThe 2.5-mile jogging trail has an asphalt surface with exercise equipment along the trail.\n\nThere are 3 multi-purpose fields located in this park. These fields can be used for baseball/softball, football and/or soccer. The fields can be reserved, however reservations are not required. Lighting is not available.\n\nReservations of 150 people or more is required for the use of the Open Air Pavilion. Kitchen facilities, lights, and electrical outlets are available. Wood and charcoal barbeque grilling is also available. Seating capacity for the Open Air Pavilion is 400. Volleyball poles are available for use. Nets and balls not provided. There are 230 cement picnic tables available, in which some are handicap accessible.\n\nNew play structures with shade canopies were installed in 2011.",
+                "event_image_url": "https://www.visithoustontexas.com/includes/public/assets/images/default.png",
+                "event_phone": "713.440.1587",
+                "event_website": "https://www.visithoustontexas.com/plugins/crm/count/?type=server&key=4_20062&val=5e48a1701650c96b7ad494b0fb6e9752ee631bb76b47365ea4d29cfaef896d8bf08e96801a74bc9cd2f6a2ef7e8e9395b5a44e702bfd5c9046f5264ddf81b6e95e4286c08d57323e9b39c344c6a0",
+                "tickets_available": true, 
+                "id": 4,
+                "buy_tickets_url": " ",
+                "title": "Alexander Deussen Park"
+                },
+                {
+                "event_address": "",
+                "event_category": "",
+                "event_description": "",
+                "event_image_url": "https://res-3.cloudinary.com/simpleview/image/fetch/c_fill,f_auto,g_center,h_400,q_60,w_600/http://Houston.simpleviewcrm.com/images/calendar/ff2c53be-e9ae-4c7f-b66d-3a0875e400a7.jpg",
+                "event_phone": "",
+                "event_website": "",
+                "tickets_available": true, 
+                "id": 5,
+                "buy_tickets_url": " ",
+                "title": "11TH ANNUAL MLK YOUTH PARADE MIDTOWN HOUSTON"
+                },
+            ]
         }
